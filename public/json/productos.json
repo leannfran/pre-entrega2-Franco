@@ -1,0 +1,227 @@
+[
+    {
+        "id": 1,
+        "idCategoria":"Proteinas",
+        "nombre": "BEST WHEY PROTEIN",
+        "marca": "XTRENGHT",
+        "cantidad": "2 lb",
+        "precio": 5480,
+        "sabor":"Vainilla",
+        "stock": 30,
+        "img": "BEST-WHEY-VAINILLA.png"
+    },
+    {
+        "id": 2,
+        "idCategoria": "Proteinas",
+        "nombre": "BEST WHEY PROTEIN",
+        "marca": "XTRENGHT",
+        "cantidad": "3 kg",
+        "precio": 14490,
+        "sabor":"Chocolate",
+        "stock": 30,
+        "img": "BEST-WHEY-CHOCOLATE-BIG-SIZE.png"
+    },
+    {
+        "id": 3,
+        "idCategoria": "Proteinas",
+        "nombre": "ADVANCED WHEY PROTEIN",
+        "marca": "XTRENGHT",
+        "cantidad": "2 lb",
+        "precio": 6499,
+        "sabor":"Frutilla",
+        "stock": 30,
+        "img": "ADVANCED-WHEY-FRUTILLA.png"
+    },
+    {
+        "id": 4,
+        "idCategoria": "Aminoacidos",
+        "nombre": "CREATINA",
+        "marca": "XTRENGHT",
+        "cantidad": "250 grs",
+        "precio": 7490,
+        "stock": 30,
+        "img": "Creatine-250-500.png"
+    },
+    {
+        "id": 5,
+        "idCategoria":"Aminoacidos",
+        "nombre": "CREATINA",
+        "marca": "XTRENGHT",
+        "cantidad": "500 grs",
+        "precio": 13522,
+        "stock": 30,
+        "img": "Creatine-500.500.png"
+    },
+    {
+        "id": 6,
+        "idCategoria": "Aminoacidos",
+        "nombre": "GLUTAMINE",
+        "marca": "XTRENGHT",
+        "cantidad": "300 grs",
+        "precio": 4200,
+        "stock": 30,
+        "img": "Glutamine.500.png"
+    },
+    {
+        "id": 7,
+        "idCategoria": "Aminoacidos",
+        "nombre": "HYDRO BCAA",
+        "marca": "XTRENGHT",
+        "cantidad": "30 serv",
+        "precio": 4800,
+        "stock": 30,
+        "sabor":["FRUIT PUNCH","BLUE RAZZ"],
+        "img": "HYDRO-BCAA-PRO--punch.500.png"
+    },
+    {
+        "id": 8,
+        "idCategoria": "Aminoacidos",
+        "nombre": "BCAA PRO",
+        "marca": "XTRENGHT",
+        "cantidad": "120 caps",
+        "precio": 2800,
+        "stock": 30,
+        "img": "Pro-bcaa.500.png"
+    },
+    {
+        "id": 9,
+        "idCategoria": "Mass Gainer",
+        "nombre": "NITROGAIN",
+        "marca": "XTRENGHT",
+        "cantidad": "5 kg",
+        "precio": 10500,
+        "sabor":["Chocolate","Vainilla"],
+        "stock": 30,
+        "img": "Nitrogain-Chocolate-BIG-SIZE.jpeg"
+    },
+    {
+        "id": 10,
+        "idCategoria": "Mass Gainer",
+        "nombre": "NITROGAIN",
+        "marca": "XTRENGHT",
+        "cantidad": "1.5 kg",
+        "precio": 4600,
+        "sabor":["Chocolate","Frutilla","Vainilla","Cookies"],
+        "stock": 30,
+        "img": "xtrenght_nitrogain_cookies.png"
+    },
+    {
+        "id": 11,
+        "idCategoria": "Accesorios",
+        "nombre": "SHAKER",
+        "marca": "XTRENGHT",
+        "color": ["Negro","Violeta"],
+        "precio": 1200,
+        "cantidad":"1",
+        "stock": 30,
+        "img": "shaker-NEGRO-500.png"
+    },
+    {
+        "id": 12,
+        "idCategoria": "Accesorios",
+        "nombre": "SHAKER PRO",
+        "marca": "XTRENGHT",
+        "cantidad":"1",
+        "color": "Violeta",
+        "precio": 3100,
+        "stock": 30,
+        "img": "shaker-NEGRO-500.png"
+    },
+    {
+        "id": 13,
+        "idCategoria": "Proteinas",
+        "nombre": "BEST WHEY PROTEIN",
+        "marca": "XTRENGHT",
+        "cantidad": "2 lb",
+        "precio": 5480,
+        "sabor":"Banana",
+        "stock": 30,
+        "img": "BEST-WHEY-Protein-Banana.png"
+    },
+    {
+        "id": 14,
+        "idCategoria": "Proteinas",
+        "nombre": "BEST WHEY PROTEIN",
+        "marca": "XTRENGHT",
+        "cantidad": "2 lb",
+        "precio": 5480,
+        "sabor":"Chocolate",
+        "stock": 30,
+        "img": "BEST-WHEY-Protein-Chocolate.png"
+    },{
+        "id": 15,
+        "idCategoria": "Proteinas",
+        "nombre": "BEST WHEY PROTEIN",
+        "marca": "XTRENGHT",
+        "cantidad": "2 lb",
+        "precio": 5480,
+        "sabor":"Cookies",
+        "stock": 30,
+        "img": "BEST-WHEY-Protein-Cookies.png"
+    },{
+        "id": 16,
+        "idCategoria": "Proteinas",
+        "nombre": "BEST WHEY PROTEIN",
+        "marca": "XTRENGHT",
+        "cantidad": "2 lb",
+        "precio": 5480,
+        "sabor":"Frutilla",
+        "stock": 30,
+        "img": "BEST-WHEY-Protein-Frutilla.png"
+    },
+    {
+    "id": 17,
+    "idCategoria":  "Accesorios",
+    "nombre": "SHAKER PRO",
+    "marca": "XTRENGHT",
+    "cantidad":"1",
+    "color": "negro",
+    "precio": 3100,
+    "stock": 30,
+    "img": "shaker-NEGRO-500.png"
+},
+{
+    "id": 18,
+    "idCategoria": "Proteinas",
+    "nombre": "BEST WHEY PROTEIN",
+    "marca": "XTRENGHT",
+    "cantidad": "3 kg",
+    "precio": 14490,
+    "sabor":"Banana",
+    "stock": 30,
+    "img": "BEST-WHEY-Protein-Banana.png"
+},
+{
+    "id": 19,
+    "idCategoria": "Proteinas",
+    "nombre": "BEST WHEY PROTEIN",
+    "marca": "XTRENGHT",
+    "cantidad": "3 kg",
+    "precio": 14490,
+    "sabor":"Vainilla",
+    "stock": 30,
+    "img": "BEST-WHEY-VAINILLA-BIG-SIZE.png"
+},{
+    "id": 20,
+    "idCategoria": "Proteinas",
+    "nombre": "BEST WHEY PROTEIN",
+    "marca": "XTRENGHT",
+    "cantidad": "3 kg",
+    "precio": 14490,
+    "sabor":"Cookies",
+    "stock": 30,
+    "img": "BEST-WHEY-BIG-SIZE-NOFOTO.png"
+},{
+    "id": 21,
+    "idCategoria": "Proteinas",
+    "nombre": "BEST WHEY PROTEIN",
+    "marca": "XTRENGHT",
+    "cantidad": "3 kg",
+    "precio": 14490,
+    "sabor":"Frutilla",
+    "stock": 30,
+    "img": "BEST-WHEY-BIG-SIZE-FRUTILLA.jpeg"
+}
+
+
+]
