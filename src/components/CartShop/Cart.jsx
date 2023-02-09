@@ -4,7 +4,7 @@ const Cart =  ({cantCarrito}) => {
     return (
     <div className="relative carrito flex flex-col jusify-center items-center">
         <p className='absolute -top-2.5 left-2.5 text-white text-xs'>{cantCarrito}</p>
-        <AiOutlineShoppingCart className='text-3xl text-white' />
+        <AiOutlineShoppingCart className='text-3xl text-white hover:text-primary transition' />
     </div>
     );
 }

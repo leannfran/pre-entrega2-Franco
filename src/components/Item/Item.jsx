@@ -20,7 +20,7 @@ const Item = ({item}) => {
       <div className="py-4 px-6 flex items-center justify-between bg-black rounded-bl-lg rounded-br-lg">
           <span className="text-white font-bold">${new Intl.NumberFormat('de-DE').format(item.precio) }</span>
           <a className="flex text-white hover:text-grey-300 transition-colors font-semibold outline-none ">
-          <p className='relative cursor-pointer hover:text-gray-300 transition-colors hover:hover:underline transition '>< AiOutlineShoppingCart className='absolute -left-5 top-1' /><Link to={`/item/${item.id}`}> VER MAS</Link> </p> 
+          <p className='relative cursor-pointer hover:text-primary transition hover:underline transition '>< AiOutlineShoppingCart className='absolute -left-5 top-1' /><Link to={`/item/${item.id}`}> VER MAS</Link> </p> 
           </a>
       </div>
     </div>

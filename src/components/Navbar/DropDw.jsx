@@ -1,10 +1,10 @@
-import { Fragment } from 'react'
+import React, { Fragment } from 'react'
 import { Menu, Transition } from '@headlessui/react'
 import {MdArrowDropDown,MdArrowDropUp} from 'react-icons/md'
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
-export default function DropDw() {
+const DropDw = React.memo (()=> {
 
     const [drop, setDrop] = useState(false);
 
@@ -49,4 +49,6 @@ export default function DropDw() {
       </Transition>
     </Menu>
   )
-}
+})
+
+export default DropDw
