@@ -39,6 +39,7 @@
         "marca": "XTRENGHT",
         "cantidad": "250 grs",
         "precio": 7490,
+        "sabor":"sin sabor",
         "stock": 30,
         "img": "https://firebasestorage.googleapis.com/v0/b/ecommerce-react-coder-11bdc.appspot.com/o/Creatine-250-500.png?alt=media&token=24ce0a78-693d-4ff2-a6f1-7510028e2b4a"
     },
@@ -47,6 +48,7 @@
         "idCategoria":"Aminoacidos",
         "nombre": "CREATINA",
         "marca": "XTRENGHT",
+        "sabor":"sin sabor",
         "cantidad": "500 grs",
         "precio": 13522,
         "stock": 30,
@@ -58,6 +60,7 @@
         "nombre": "GLUTAMINE",
         "marca": "XTRENGHT",
         "cantidad": "300 grs",
+        "sabor":"sin sabor",
         "precio": 4200,
         "stock": 30,
         "img": "https://firebasestorage.googleapis.com/v0/b/ecommerce-react-coder-11bdc.appspot.com/o/Glutamine.500.png?alt=media&token=e625364a-db16-43d8-9f8b-a570a608b145"
@@ -70,7 +73,7 @@
         "cantidad": "30 serv",
         "precio": 4800,
         "stock": 30,
-        "sabor":["FRUIT PUNCH","BLUE RAZZ"],
+        "sabor":"FRUIT PUNCH",
         "img": "https://firebasestorage.googleapis.com/v0/b/ecommerce-react-coder-11bdc.appspot.com/o/HYDRO-BCAA-PRO--punch.500.png?alt=media&token=a153fbb0-b255-49b6-b425-412028772827g"
     },
     {
@@ -80,6 +83,7 @@
         "marca": "XTRENGHT",
         "cantidad": "120 caps",
         "precio": 2800,
+        "sabor":"sin sabor",
         "stock": 30,
         "img": "https://firebasestorage.googleapis.com/v0/b/ecommerce-react-coder-11bdc.appspot.com/o/Pro-bcaa.500.png?alt=media&token=4dfdb7d2-3f6d-4f0d-a241-772d6cbf6cea"
     },
@@ -90,7 +94,7 @@
         "marca": "XTRENGHT",
         "cantidad": "5 kg",
         "precio": 10500,
-        "sabor":["Chocolate","Vainilla"],
+        "sabor":"Vainilla",
         "stock": 30,
         "img": "https://firebasestorage.googleapis.com/v0/b/ecommerce-react-coder-11bdc.appspot.com/o/Nitrogain-Chocolate-BIG-SIZE.jpeg?alt=media&token=7a2b40ed-1b6b-47bf-8364-c45fad861c6b"
     },
@@ -101,7 +105,7 @@
         "marca": "XTRENGHT",
         "cantidad": "1.5 kg",
         "precio": 4600,
-        "sabor":["Chocolate","Frutilla","Vainilla","Cookies"],
+        "sabor":"Chocolate",
         "stock": 30,
         "img": "https://firebasestorage.googleapis.com/v0/b/ecommerce-react-coder-11bdc.appspot.com/o/xtrenght_nitrogain_cookies.png?alt=media&token=329aa412-f70b-492f-bcde-19cc6c8bd1d1"
     },
@@ -110,8 +114,9 @@
         "idCategoria": "Accesorios",
         "nombre": "SHAKER",
         "marca": "XTRENGHT",
-        "color": ["Negro","Violeta"],
+        "sabor": "Negro",
         "precio": 1200,
+        
         "cantidad":"1",
         "stock": 30,
         "img": "https://firebasestorage.googleapis.com/v0/b/ecommerce-react-coder-11bdc.appspot.com/o/shaker-NEGRO-500.png?alt=media&token=761ab780-32d8-40ce-adb0-06c9403b7a5f"
@@ -122,7 +127,8 @@
         "nombre": "SHAKER PRO",
         "marca": "XTRENGHT",
         "cantidad":"1",
-        "color": "Violeta",
+        "sabor":"violeta",
+
         "precio": 3100,
         "stock": 30,
         "img": "https://firebasestorage.googleapis.com/v0/b/ecommerce-react-coder-11bdc.appspot.com/o/shaker-NEGRO-500.png?alt=media&token=761ab780-32d8-40ce-adb0-06c9403b7a5f"
@@ -210,7 +216,7 @@
     "precio": 14490,
     "sabor":"Cookies",
     "stock": 30,
-    "img": "BEST-WHEY-BIG-SIZE-NOFOTO.png"
+    "img": "https://firebasestorage.googleapis.com/v0/b/ecommerce-react-coder-11bdc.appspot.com/o/BEST-WHEY-VAINILLA.png?alt=media&token=79627109-f6c4-4995-9d0c-a3a674ca1a4a"
 },{
     "id": 21,
     "idCategoria": "Proteinas",
@@ -221,6 +227,72 @@
     "sabor":"Frutilla",
     "stock": 30,
     "img": "https://firebasestorage.googleapis.com/v0/b/ecommerce-react-coder-11bdc.appspot.com/o/BEST-WHEY-BIG-SIZE-FRUTILLA.jpeg?alt=media&token=b900f2cc-9c18-45af-9ab0-c7421d32f6ce"
+},{
+    "id": 22,
+        "idCategoria": "Aminoacidos",
+        "nombre": "HYDRO BCAA",
+        "marca": "XTRENGHT",
+        "cantidad": "30 serv",
+        "precio": 4800,
+        "stock": 30,
+        "sabor":"Blue Razz",
+        "img": "https://firebasestorage.googleapis.com/v0/b/ecommerce-react-coder-11bdc.appspot.com/o/HYDRO-BCAA-PRO--punch.500.png?alt=media&token=a153fbb0-b255-49b6-b425-412028772827g"
+
+},{ 
+"id": 23,
+"idCategoria": "Mass Gainer",
+"nombre": "NITROGAIN",
+"marca": "XTRENGHT",
+"cantidad": "5 kg",
+"precio": 10500,
+"sabor":"chocolate",
+"stock": 30,
+"img": "https://firebasestorage.googleapis.com/v0/b/ecommerce-react-coder-11bdc.appspot.com/o/Nitrogain-Chocolate-BIG-SIZE.jpeg?alt=media&token=7a2b40ed-1b6b-47bf-8364-c45fad861c6b"
+},
+ {
+    "id": 24,
+    "idCategoria": "Mass Gainer",
+    "nombre": "NITROGAIN",
+    "marca": "XTRENGHT",
+    "cantidad": "1.5 kg",
+    "precio": 4600,
+    "sabor":"Frutilla",
+    "stock": 30,
+    "img": "https://firebasestorage.googleapis.com/v0/b/ecommerce-react-coder-11bdc.appspot.com/o/xtrenght_nitrogain_cookies.png?alt=media&token=329aa412-f70b-492f-bcde-19cc6c8bd1d1"
+},
+{
+    "id": 25,
+    "idCategoria": "Mass Gainer",
+    "nombre": "NITROGAIN",
+    "marca": "XTRENGHT",
+    "cantidad": "1.5 kg",
+    "precio": 4600,
+    "sabor":"Vainilla",
+    "stock": 30,
+    "img": "https://firebasestorage.googleapis.com/v0/b/ecommerce-react-coder-11bdc.appspot.com/o/xtrenght_nitrogain_cookies.png?alt=media&token=329aa412-f70b-492f-bcde-19cc6c8bd1d1"
+},
+{
+    "id": 26,
+    "idCategoria": "Mass Gainer",
+    "nombre": "NITROGAIN",
+    "marca": "XTRENGHT",
+    "cantidad": "1.5 kg",
+    "precio": 4600,
+    "sabor":"Cookies",
+    "stock": 30,
+    "img": "https://firebasestorage.googleapis.com/v0/b/ecommerce-react-coder-11bdc.appspot.com/o/xtrenght_nitrogain_cookies.png?alt=media&token=329aa412-f70b-492f-bcde-19cc6c8bd1d1"
+},
+{
+    "id": 27,
+    "idCategoria": "Accesorios",
+    "nombre": "SHAKER",
+    "marca": "XTRENGHT",
+    "sabor": "Violeta",
+    "precio": 1200,
+    
+    "cantidad":"1",
+    "stock": 30,
+    "img": "https://firebasestorage.googleapis.com/v0/b/ecommerce-react-coder-11bdc.appspot.com/o/shaker-NEGRO-500.png?alt=media&token=761ab780-32d8-40ce-adb0-06c9403b7a5f"
 }
 
 

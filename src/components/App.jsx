@@ -8,11 +8,12 @@ import ItemDetailContainer from "./ItemDetailContainer/ItemDetailContainer";
 import Contacto from "./Contacto/Contacto";
 import Footer from "./footer/footer";
 import Cart from "./Cart/Cart"
-//firebase
-import { cargarBDD } from '../firebase/firebase';
+//fire base
+import { getProductos } from '../firebase/firebase'
 function App() {
-  cargarBDD()
-  return (
+  
+
+ return (
     <>
       <BrowserRouter>
         <Navbar />

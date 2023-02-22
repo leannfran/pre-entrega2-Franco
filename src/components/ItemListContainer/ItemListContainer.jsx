@@ -2,35 +2,31 @@ import { useState, useEffect } from "react";
 import ItemList from "../ItemList/ItemList";
 import { useParams } from "react-router-dom";
 import CarrouselProd from "./CarrouselProd";
+//firebase
+import { getProductos } from "../../firebase/firebase";
 const ItemListContainer = () => {
   const [productos, setProductos] = useState([]);
   const { idCategoria } = useParams();
 
   useEffect(() => {
     if (idCategoria) {
-      fetch("../json/productos.json")
-        .then((response) => response.json())
-        .then((items) => {
-          const products = items.filter(
-            (prod) => prod.idCategoria === idCategoria
-          );
-          const productsList = (
-            <ItemList products={products} plantilla={"item"} />
-          ); //Array de productos en JSX
-          console.log(productsList);
+      getProductos()
+        .then(items => {
+          const products = items.filter(prod => prod.idCategoria === idCategoria  );
+          const productsList = (<ItemList products={products} plantilla={"item"} />); 
+    //Array de productos en JSX
           setProductos(productsList);
-        });
+        })
     } else {
-      fetch("./json/productos.json")
-        .then((response) => response.json())
-        .then((products) => {
-          console.log(products);
+        getProductos()
+        .then(products => {
           const productsList = <ItemList products={products} plantilla={'item'}/> 
-          console.log(productsList);
           setProductos(productsList);
         });
     }
   }, [idCategoria]);
+
+ 
 
   return (
     <>
