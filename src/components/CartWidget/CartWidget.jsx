@@ -1,6 +1,6 @@
 import React from 'react';
 import { AiOutlineShoppingCart } from "react-icons/ai";
-const Cart =  ({cantCarrito}) => {
+const CartWidget =  ({cantCarrito}) => {
     return (
     <div className="relative carrito flex flex-col jusify-center items-center">
         <p className='absolute -top-2.5 left-2.5 text-white text-xs'>{cantCarrito}</p>
@@ -9,4 +9,4 @@ const Cart =  ({cantCarrito}) => {
     );
 }
 
-export default Cart;
+export default CartWidget;

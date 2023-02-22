@@ -1,19 +1,23 @@
-import React, { Fragment } from 'react'
-import { Menu, Transition } from '@headlessui/react'
-import {MdArrowDropDown,MdArrowDropUp} from 'react-icons/md'
-import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import React, { Fragment } from "react";
+import { Menu, Transition } from "@headlessui/react";
+import { MdArrowDropDown, MdArrowDropUp } from "react-icons/md";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
-const DropDw = React.memo (()=> {
-
-    const [drop, setDrop] = useState(false);
+const DropDw = React.memo(() => {
+  const [drop, setDrop] = useState(false);
 
   return (
-    <Menu as="div" className="mt-10 ml-10 font-semibold    relative inline-block ">
+    <Menu
+      as="div"
+      className="mt-10 ml-10 font-semibold    relative inline-block "
+    >
       <div>
-        <Menu.Button className="flex w-auto items-center justify-center text-white hover:text-red-600 hover: transition-all " onClick={()=>setDrop(!drop)}>
-          Categorias {drop ? <MdArrowDropUp/> : <MdArrowDropDown/>}
-          
+        <Menu.Button
+          className="flex w-auto items-center justify-center text-white hover:text-red-600 hover: transition-all "
+          onClick={() => setDrop(!drop)}
+        >
+          Categorias {drop ? <MdArrowDropUp /> : <MdArrowDropDown />}
         </Menu.Button>
       </div>
 
@@ -30,25 +34,49 @@ const DropDw = React.memo (()=> {
           <div className="py-1 flex flex-col justify-center items-end">
             <Menu.Item>
               {({ active }) => (
-                <Link to={"category/Proteinas"} className="px-4 py-2 hover: hover:text-red-600 transition-all duration-300 ">Proteinas</Link>)}
+                <Link
+                  to={"category/Proteinas"}
+                  className="px-4 py-2 hover: hover:text-red-600 transition-all duration-300 "
+                >
+                  Proteinas
+                </Link>
+              )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <Link to={"category/Aminoacidos"} className="px-4 py-2 hover: hover:text-red-600 transition-all duration-300">Aminoacidos</Link>)}
+                <Link
+                  to={"category/Aminoacidos"}
+                  className="px-4 py-2 hover: hover:text-red-600 transition-all duration-300"
+                >
+                  Aminoacidos
+                </Link>
+              )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-               <Link to={"category/Mass Gainer"} className="px-4 py-2 hover: hover:text-red-600 transition-all duration-300">Mass Gainer</Link>)}
+                <Link
+                  to={"category/Mass Gainer"}
+                  className="px-4 py-2 hover: hover:text-red-600 transition-all duration-300"
+                >
+                  Mass Gainer
+                </Link>
+              )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-              <Link to={"category/Accesorios"} className="px-4 py-2 hover: hover:text-red-600 transition-all duration-300">Accesorios</Link>)}
+                <Link
+                  to={"category/Accesorios"}
+                  className="px-4 py-2 hover: hover:text-red-600 transition-all duration-300"
+                >
+                  Accesorios
+                </Link>
+              )}
             </Menu.Item>
           </div>
         </Menu.Items>
       </Transition>
     </Menu>
-  )
-})
+  );
+});
 
-export default DropDw
+export default DropDw;

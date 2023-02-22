@@ -1,4 +1,4 @@
-import { createContext, useContext, useState,  } from "react";
+import { createContext, useContext, useState, } from "react";
 
 
 
@@ -19,7 +19,7 @@ export const DarkModeProvider = (props) => {
         }
     }
     return (
-        <DarkModeContext.Provider value={{darkMode, toggleDarkMode}}>
+        <DarkModeContext.Provider value={{ darkMode, toggleDarkMode }}>
             {props.children}
         </DarkModeContext.Provider>
     )

@@ -1,39 +1,45 @@
-import { useState,useEffect } from 'react';
-import ItemList from '../ItemList/ItemList';
-import { useParams } from 'react-router-dom'
-
+import { useState, useEffect } from "react";
+import ItemList from "../ItemList/ItemList";
+import { useParams } from "react-router-dom";
+import CarrouselProd from "./CarrouselProd";
 const ItemListContainer = () => {
   const [productos, setProductos] = useState([]);
-  const {idCategoria}= useParams();
+  const { idCategoria } = useParams();
 
-
-  useEffect(()=> {
+  useEffect(() => {
     if (idCategoria) {
-      fetch('../json/productos.json')
-      .then(response => response.json())
-      .then(items => {
-          const products = items.filter(prod => prod.idCategoria === idCategoria)
-          const productsList = ItemList({products}) //Array de productos en JSX
-          console.log(productsList)
-          setProductos(productsList)
-    })   
-  } else  {
-    fetch('./json/productos.json')
-    .then (response => response.json())
-    .then (products => {
-      console.log(products)
-      const productsList = ItemList({products}) 
-      console.log(productsList)
-      setProductos(productsList)
-    })
-  }
-    }, [idCategoria])
-  
-    return (
-        <div className=' mx-10 my-10 flex items-center justify-between flex-wrap gap-8'>
-          {productos}
-        </div>
-    );
-}
+      fetch("../json/productos.json")
+        .then((response) => response.json())
+        .then((items) => {
+          const products = items.filter(
+            (prod) => prod.idCategoria === idCategoria
+          );
+          const productsList = (
+            <ItemList products={products} plantilla={"item"} />
+          ); //Array de productos en JSX
+          console.log(productsList);
+          setProductos(productsList);
+        });
+    } else {
+      fetch("./json/productos.json")
+        .then((response) => response.json())
+        .then((products) => {
+          console.log(products);
+          const productsList = <ItemList products={products} plantilla={'item'}/> 
+          console.log(productsList);
+          setProductos(productsList);
+        });
+    }
+  }, [idCategoria]);
+
+  return (
+    <>
+    <CarrouselProd/>
+    <div className=" mx-10 my-10 flex items-center justify-between flex-wrap gap-8">
+      {productos}
+    </div>
+    </>
+  );
+};
 
 export default ItemListContainer;
