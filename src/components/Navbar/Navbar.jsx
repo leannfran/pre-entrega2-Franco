@@ -12,9 +12,7 @@ const Navbar = () => {
           <Link to={"/"}>FronFitnes</Link>
         </h1>
 
-        <Link to={"/Carrito"}>
-          <CartWidget cantCarrito={10} />
-        </Link>
+          <CartWidget />
       </header>
     </div>
   );

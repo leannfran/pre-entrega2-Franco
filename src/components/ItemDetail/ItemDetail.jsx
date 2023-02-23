@@ -1,8 +1,13 @@
 import Saboresdrop from "./SaboresDrop";
 import ItemCount from "../ItemCount/ItemCount";
-import { AiOutlineShoppingCart } from "react-icons/ai";
-
+import { AiOutlineShoppingCart, AiFillInteraction } from "react-icons/ai";
+import { useCarritoContext } from "../../context/carritoContext";
+import { Link } from "react-router-dom";
 const Itemdetail = ({ item }) => {
+  const { addItem } = useCarritoContext();
+  const onAdd = (cantidad) => {
+    addItem(item, cantidad);
+  };
   return (
     <div className="bg-gray-100 flex-col md:flex-row w-full h-full flex  rounded-xl ">
       <div className="min-w-full md:min-w-[50%] flex flex-col items-center justify-center bg-">
@@ -12,11 +17,7 @@ const Itemdetail = ({ item }) => {
         <p className="text-xl font-light text-blackss md:hidden">
           {item.marca}
         </p>
-        <img
-          className=""
-          src={item.img}
-          alt={`imagen de ${item.nombre}`}
-        />
+        <img className="" src={item.img} alt={`imagen de ${item.nombre}`} />
       </div>
 
       <div className="flex flex-col justify-center items-center md:items-start">
@@ -28,18 +29,17 @@ const Itemdetail = ({ item }) => {
         </p>
 
         <p className="text-xl font-bold text-gray-800 mt-10 mb-3">
-          ${new Intl.NumberFormat("de-DE").format(item.precio)}
+          $ {new Intl.NumberFormat("de-DE").format(item.precio)}
         </p>
-        <p className="text-l text-center md:text-start font-light text-gray-600 mr-10 mb-10">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolores
-          illum adipisci vel eos voluptas doloribus ipsum vero atque temporibus
-          ut.
-        </p>
-        <ItemCount valorInicial={1} stock={item.stock} />
-        <button className=" flex items-center w-full md:w-auto font-bold  border border-gray-800 text-gray-800 py-2 px-4 hover:bg-black hover:text-white rounded-xl transition-colors mb-10">
-          <AiOutlineShoppingCart className="text-xl mr-2 font-bold" />
-          Agregar al Carrito
-        </button>
+
+        <ItemCount valInicial={1} stock={item.stock} onAdd={onAdd}/>
+       
+        <Link to={"/Carrito"}>
+          <button className="flex items-center w-full md:w-auto font-bold  border border-gray-800 text-gray-800 py-2 px-4 hover:bg-black hover:text-white rounded-xl transition-colors mb-10">
+            <AiFillInteraction className="text-xl mr-2 font-bold" />
+            Finalizar Compra
+          </button>
+        </Link>
       </div>
     </div>
   );
